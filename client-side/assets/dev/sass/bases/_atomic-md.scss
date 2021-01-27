@@ -1,0 +1,53 @@
+@include respond-to(min-md) {
+    .font-md-30 {
+        font-size: 30px !important;
+    }
+
+    .font-md-24 {
+        font-size: 24px !important;
+    }
+
+    .font-md-23 {
+        font-size: 23px !important;
+    }
+
+    .font-md-22 {
+        font-size: 22px !important;
+    }
+
+    .font-md-19 {
+        font-size: 19px !important;
+    }
+
+    .font-md-20 {
+        font-size: 20px !important;
+    }
+
+    .font-md-18 {
+        font-size: 18px !important;
+    }
+
+    .font-md-18 {
+        font-size: 18px;
+    }
+
+    .font-md-16 {
+        font-size: 16px !important;
+    }
+
+    .font-md-12 {
+        font-size: 12px !important;
+    }
+
+    .font-md-14 {
+        font-size: 14px !important;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .w-md-50 {
+        width: 50% !important;
+    }
+}

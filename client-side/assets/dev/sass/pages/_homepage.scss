@@ -1,0 +1,122 @@
+.gl-homepage {
+    &__banner {
+        .img {
+            height: 200px;
+            img {
+                object-fit: cover;
+            }
+        }
+        .info-channel {
+            bottom: 27px;
+            left: 30px;
+            .avatar {
+                height: 40px;
+                width: 40px;
+            }
+            .info {
+                .content {
+                    width: 75%;
+                    max-height: 45px;
+                }
+            }
+        }
+    }
+    .gl-nav {
+        &__title {
+            .tab-click.active {
+                border-bottom: 2px solid red;
+            }
+        }
+    }
+    .related-channel {
+        .img-avatar {
+            height: 18px;
+            width: 18px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .gl-homepage {
+        &__banner {
+            .img {
+                height: 290px;
+                img {
+                    object-fit: unset;
+                }
+            }
+            .info-channel {
+                bottom: 27px;
+                left: 38px;
+                .avatar {
+                    height: 60px;
+                    width: 60px;
+                }
+                .info {
+                    .content {
+                        max-height: 45px;
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .item-video {
+//     .link-video {
+//         .bg-obacity-player {
+//         }
+//     }
+// }
+
+.item-video {
+
+    .img-video {
+        position: relative;
+        a{
+            width: 100%;
+        }
+        .time-video {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 10px;
+        }
+        .watch-later {
+            position: absolute;
+            right: 5px;
+            top: 8px;
+            cursor: pointer;
+            border-radius: 10px;
+            visibility: hidden;
+            padding-bottom: 5px;
+        }
+        .player {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+        &:hover {
+            .watch-later,
+            .player {
+                visibility: visible;
+            }
+        }
+    }
+    .info {
+        .dropdown-menu {
+            top: 23px;
+            left: -250px;
+            min-width: 17rem;
+        }
+        .channel-name {
+            .img-avatar {
+                height: 28px;
+                width: 28px;
+            }
+        }
+    }
+}

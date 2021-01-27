@@ -1,0 +1,25 @@
+.gl-payDetails {
+    &__back {
+        a {
+            color: #000;
+            &:hover {
+                color: #053afb;
+            }
+        }
+    }
+    &__title {
+        border-bottom: solid 2px #dee2e6;
+        h2 {
+            color: #053afb;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .gl-payDetails {
+        &__title {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}

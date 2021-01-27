@@ -1,0 +1,274 @@
+.gl-homepage-upload {
+    min-height: 100vh;
+    background-color: #eee;
+    width: 100%;
+    &__sub {
+        z-index: 100;
+        min-height: 660px;
+        padding-left: unset !important;
+
+        input[type='text']::placeholder{
+            color: rgb(196, 196, 196);
+        }
+
+        .one-word-input{
+            // width: 100px;
+        }
+
+        .sub-row{
+            
+            .sub-column{
+                margin-top: 10px;
+                .btn-add-sub-container{
+                    float: right;
+                    i{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+        }
+
+        i{
+            font-size: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+            float:right;
+            &.plus{
+                color: #5CBA5C;
+                margin-left: 10px;
+                float:right;
+                &:hover{
+                    color: #459145;
+                }
+                &:active{
+                    color: #295029;
+                }
+            }
+    
+            &.minus{
+                float:right;
+                color: #e95b59;
+                &:hover{
+                    color: #a53e3c;
+                }
+                &:active{
+                    color: #682625;
+                }
+            }
+    
+        }
+
+        #add-remove-one-word-container{
+            overflow:auto; 
+            margin-bottom: 10px;
+            #auto-translate-opt-container{
+                position: relative;
+                float: left;
+                input{
+                    margin-left: 10px;
+                    position: absolute;
+                    top:10%;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+
+        }
+    }
+    .gl-hot-fix-sub {
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    &__content {
+        .labelUpload{
+            &:hover:not([disabled]){
+                cursor: pointer;
+            }
+           
+        }
+        .labelUpload[disabled=disabled]{
+            background-color: black !important;
+        }
+        .disableBtn{
+            background-color: grey !important;
+        }
+        h1{
+            color: #0981ec;
+        }
+        .text{
+            color: #6f6f6f;
+        }
+        .link{
+            .title{
+                i, p{
+                    color: #6f6f6f;
+                }
+            }
+            .form-input {
+                button {
+                    top: 50%;
+                    transition: all .3s ease-in-out;
+                    transform: translateY(-50%);
+                    color: #fff;
+                    background-color: #1a4aaa;
+                    i{
+                        transform: rotate(90deg);
+                    }
+                }
+                .symbol-input {
+                    right: 0px;
+                }
+                input {
+                    background-color: #f7f7f7;
+                    color: #8d8d8d;
+                    font-style: italic;
+                    padding-right: 80px;
+                }
+            }
+        }
+        .detail{
+            .picture{
+                overflow-x: auto;
+                cursor: pointer;
+                .item-picture{
+                    img{
+                        width: 195px;
+                        // height: 100px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .picture::-webkit-scrollbar{
+                height:5px;
+                display: none;
+            }
+            .picture::-webkit-scrollbar-thumb {
+                background: #000; 
+                border-radius: 10px;
+            }
+            .button-load{
+                .btn-upload{
+                    border: solid 2px #1a4aaa;
+                    &:hover{
+                        border: solid 2px #000;
+                    }
+                }
+                .btn-save{
+                    font-weight: 600;
+                    border: solid 2px #1a4aaa;
+                    color: #1a4aaa;
+                    background-color: #fff;
+                    &:hover{
+                        background: #000;
+                        color: #fff;
+                        border: solid 2px #000;
+                    }
+                }
+            }
+        }
+    }
+    .sub-content {
+        max-height: 610px;
+        overflow-y: auto;
+        &:hover{
+            cursor: pointer;
+        }
+
+        .content{
+            &:hover:not(#sub-active){
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+    }
+
+    #edit-sub-container{
+        margin-top: 100px;
+    }
+
+    .sub-index{
+      position: absolute;
+      top: 0 !important;
+      left:0;
+      padding: 0px 15px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      height: 100%;
+      width: 50px;
+      .sub-index-val{
+          position: absolute;
+          top:50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
+    }
+
+    .content{
+      position: relative;
+      padding-left: 60px !important;
+    }
+}
+@media (min-width: 576px) {
+    .gl-homepage-upload {
+        background-color: unset;
+        &__content {
+            width: 100%;
+            background-color: #eee;
+            .link{
+                .form-input{
+                    input{
+                        padding-right: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-toggle {
+    border-radius: 10px !important;
+    border: 0 !important;
+    margin-top: .5rem !important;
+    padding-top: .5rem!important;
+    padding-bottom: .5rem!important;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    background-color: #fff !important;
+}
+
+.v-select input[type=search], .v-select input[type=search]:focus {
+    margin: unset !important;
+}
+
+@media (min-width: 768px) {
+    .gl-homepage-upload {
+        &__content {
+            width: 100%;
+            .detail{
+                .picture:hover::-webkit-scrollbar{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#btn-import-sub{
+  
+  .icon{
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.min-title-edit-sub-index{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,8 @@
+@include respond-to(min-sm) {
+    .font-sm-16 {
+        font-size: 16px !important;
+    }
+    .flex-sm-unset {
+        flex: unset;
+    }
+}

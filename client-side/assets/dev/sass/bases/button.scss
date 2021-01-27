@@ -1,0 +1,120 @@
+.btn-fb,
+.btn-gg,
+.btn-login,
+.btn-register {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-fb {
+    background-color: #304887;
+    border: 1px solid #304887;
+    &:hover {
+        color: #304887;
+    }
+}
+
+.btn-gg {
+    background-color: #dc4f42;
+    border: 1px solid #dc4f42;
+    &:hover {
+        color: #dc4f42;
+    }
+}
+
+.btn-login {
+    background-color: #0067c3;
+    border: 1px solid #0067c3;
+    &:hover {
+        color: #0067c3;
+    }
+}
+
+.btn-register {
+    background-color: #1a4aaa;
+    border: 1px solid #1a4aaa;
+    &:hover {
+        color: #1a4aaa;
+    }
+}
+
+.btn-send {
+    background-color: #1a4aaa;
+    border: 1px solid #1a4aaa;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 10px;
+    &:hover {
+        color: #1a4aaa;
+        background-color: #fff;
+    }
+}
+
+.btn-register-video {
+    background-color: #d80303;
+    border: 1px solid #d80303;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-showmore {
+    color: #6f6f6f;
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+}
+
+.btnUploadFileHeader {
+    color: #fff;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+    &:hover {
+        color: #dc4f42;
+        background-color: transparent;
+    }
+}
+
+.btnShowMore {
+    color: #fff;
+    background-color: #26de74;
+    border: 1px solid #002e89;
+    border-radius: 10px;
+    font-family: OpenSans-Semibold;
+    padding: 0.25rem 1rem;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+// button
+.btn-upload {
+    border: 0;
+    background-color: #1a4aaa;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    &:hover:not([disabled]) {
+        background-color: #000 !important;
+    }
+}
+
+.btn-delete{
+    border: 0;
+    background-color: #cc1414;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    &:hover:not([disabled]) {
+        background-color: rgb(126, 4, 4) !important;
+    }
+}

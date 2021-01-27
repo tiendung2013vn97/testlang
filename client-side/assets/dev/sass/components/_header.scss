@@ -1,0 +1,23 @@
+.study-lang-dropdown-container{
+    float:left;
+    position: relative;
+    .language-drop {
+        // left: -44px;
+        // top: 30px;
+        // height: 366px !important;
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+}
+.trans-lang-dropdown-container{
+   float:left;
+   position: relative;
+   .language-drop {
+    // left: -44px;
+    // top: 30px;
+    // height: 366px !important;
+    right: 0px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+}

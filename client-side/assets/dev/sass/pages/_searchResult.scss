@@ -1,0 +1,48 @@
+.search-filter-group {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
+    @include respond-to(min-lg) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @include respond-to(md) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include respond-to(sm) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.search-results__list-results {
+    @include respond-to(sm) {
+        .search-result__img-preview {
+            width: 50%;
+        }
+
+        .search-results__info-video {
+            width: 50%;
+        }
+    }
+
+    @include respond-to(min-md) {
+        .search-result__img-preview {
+            max-width: 250px;
+            width: 100%;
+        }
+
+        .video__icon-play-on-hover:hover {
+            opacity: 1 !important;
+        }
+
+        .search-results__info-video {
+            max-width: 584px;
+            width: 100%;
+        }
+    }
+}
+
+.group-search-result {
+    max-width: 850px;
+}

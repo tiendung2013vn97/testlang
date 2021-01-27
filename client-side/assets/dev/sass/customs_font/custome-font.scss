@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/client-asset/fonts/icomoon.eot?wivkk8');
+    src:  url('/client-asset/fonts/icomoon.eot?wivkk8#iefix') format('embedded-opentype'),
+        url('/client-asset/fonts/icomoon.ttf?wivkk8') format('truetype'),
+        url('/client-asset/fonts/icomoon.woff?wivkk8') format('woff'),
+        url('/client-asset/fonts/icomoon.svg?wivkk8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-floorball:before {
+    content: "\e900";
+}
+.icon-squash:before {
+    content: "\e903";
+}
+.icon-cricket:before {
+    content: "\e904";
+}
+.icon-darts:before {
+    content: "\e905";
+}
+.icon-boxing:before {
+    content: "\e906";
+}
+.icon-badminton:before {
+    content: "\e907";
+}
+.icon-gaelic:before {
+    content: "\e908";
+}
+.icon-water-polo-ball:before {
+    content: "\e902";
+}
+.icon-snooker:before {
+    content: "\e909";
+}
+.icon-tennis-ball:before {
+    content: "\e901";
+}
+.gl-odd-up {
+    -webkit-animation: glowing-up 1500ms infinite;
+    -moz-animation: glowing-up 1500ms infinite;
+    -o-animation: glowing-up 1500ms infinite;
+    animation: glowing-up 1500ms infinite;
+}
+.gl-odd-down {
+    -webkit-animation: glowing-down 1500ms infinite;
+    -moz-animation: glowing-down 1500ms infinite;
+    -o-animation: glowing-down 1500ms infinite;
+    animation: glowing-down 1500ms infinite;
+}
+@keyframes glowing-down {
+    100% { color: #E40013; }
+    50% { color: #DD5863; }
+    0% { color: #FBFBFB; }
+}
+@keyframes glowing-up {
+    100% { color: #00AD27; }
+    50% { color: #5CA76D; }
+    0% { color: #FBFBFB; }
+}

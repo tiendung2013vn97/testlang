@@ -1,0 +1,23 @@
+.gl-history {
+    .history {
+        border-bottom: 2px solid #343a40;
+        .view-history {
+            .dropdown-menu {
+                top: 62px;
+                left: 30px;
+            }
+        }
+        .search-history {
+            > input {
+                width: 160px;
+            }
+        }
+        .searchMobile {
+            .dropdown-menu {
+                right: 0;
+                left: unset;
+                top: 28px;
+            }
+        }
+    }
+}

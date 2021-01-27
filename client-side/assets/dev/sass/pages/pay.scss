@@ -1,0 +1,79 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .table-respond {
+        text-align: unset !important;
+    }
+    .table-respond,
+    .table-respond thead,
+    .table-respond tbody,
+    .table-respond th,
+    .table-respond td,
+    .table-respond tr {
+        display: block;
+    }
+    .table-respond > thead > tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .table-respond > tbody > tr {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .table-respond > tbody > tr:first-child {
+        border-radius: 3px 3px 0 0;
+        border-top: none;
+    }
+    .table-respond > tbody > tr:last-child {
+        border-radius: 0 0 3px 3px;
+        border-bottom: none;
+    }
+    .table-respond > tbody > tr td {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        padding-left: 50% !important;
+        width: 100%;
+    }
+    .table-respond > tbody > tr td:before {
+        content: attr(data-title);
+        position: absolute;
+        top: 15px;
+        left: 14px;
+        width: 30%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .table-respond > tbody > tr td:first-child {
+        text-align: left;
+    }
+    .table-respond.table-order > tbody > tr:nth-child(-n + 3) > td:first-child {
+        padding: 25px 0 25px 30% !important;
+        background-position: left 32% center;
+    }
+    .table-respond.table-order
+        > tbody
+        > tr:nth-child(-n + 3)
+        > td:first-child
+        span {
+        left: 32%;
+    }
+}
+@media (min-width: 576px) {
+    .tab-pay {
+        &__form {
+            .form-right {
+                margin-top: 0px !important;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .tab-pay {
+        .pay-content {
+            table {
+                border: #e0d7d7;
+            }
+        }
+    }
+}

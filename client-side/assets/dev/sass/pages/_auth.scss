@@ -1,0 +1,40 @@
+.gl-auth {
+    min-height: 100vh;
+    &__form {
+        h1 {
+            color: #0981ec;
+        }
+        .form-input {
+            span {
+                top: 50%;
+                transition: all 0.3s ease-in-out;
+                transform: translateY(-50%);
+                color: #969494;
+            }
+            .symbol-input {
+                left: 0px;
+            }
+            .eye-input {
+                right: 20px;
+                &:hover {
+                    color: #1e90ff;
+                }
+            }
+            input {
+                padding-left: 45px;
+                background-color: #f7f7f7;
+                color: #8d8d8d;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .gl-auth {
+        background-color: #0981ec;
+        &__form {
+            max-width: 400px;
+        }
+    }
+}

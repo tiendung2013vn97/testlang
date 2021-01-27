@@ -1,0 +1,15 @@
+.gl-sub-video {
+    padding-top: 15px;
+    min-height: calc(100vh - 79px);
+    &__sub {
+        .sub-content {
+            .content {
+                button {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

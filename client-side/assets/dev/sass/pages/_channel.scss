@@ -1,0 +1,52 @@
+.channel__avatar {
+    width: 80px;
+}
+
+.channel {
+    .video-preview {
+        @include respond-to(min-md) {
+            max-width: 250px;
+        }
+    }
+
+    .video-description {
+        @include respond-to(min-md) {
+            max-width: 450px;
+        }
+    }
+
+    .slick-arrow {
+        padding: 6px 10px;
+        border-radius: 50%;
+        z-index: 100;
+        cursor: pointer;
+        top: 50%;
+        transform: translate(0, -50%);
+        background: #fff;
+        position: absolute;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        margin: 0 5px;
+    }
+
+    .slick-list.draggable {
+        overflow: visible;
+    }
+}
+
+.gl-recharge {
+    .list-of-way-to-recharge {
+        max-width: 700px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border-collapse: collapse;
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .qr-img {
+        max-width: 250px;
+    }
+}

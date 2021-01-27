@@ -1,0 +1,30 @@
+.gl-withdrawal {
+    min-height: 100vh;
+    background-color: #eee;
+    &__content {
+        h1 {
+            color: #0981ec;
+        }
+        .text {
+            color: #707070;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .gl-withdrawal {
+        background-color: unset;
+        &__content {
+            background-color: #eee;
+            max-width: 1000px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .gl-withdrawal {
+        &__content {
+            p {
+                width: 50%;
+            }
+        }
+    }
+}

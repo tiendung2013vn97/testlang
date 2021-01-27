@@ -1,0 +1,76 @@
+.gl-recharge {
+    min-height: 100vh;
+    background-color: #eee;
+    &__content {
+        h1 {
+            color: #0981ec;
+        }
+        .select-recharge {
+            .item-select {
+                width: 120px;
+                height: 110px;
+                background: #fff;
+                img {
+                    width: 85px;
+                    height: 55px;
+                }
+            }
+        }
+        .select-price {
+            .item-price {
+                cursor: pointer;
+                &:hover {
+                    background-color: #5eaaef !important;
+                }
+            }
+            .item-price.active {
+                background-color: #0981ec !important;
+                color: #fff;
+            }
+        }
+    }
+}
+// custom check radio
+.check-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    input {
+        opacity: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0px;
+        left: 42%;
+        height: 20px;
+        width: 20px;
+        border: solid 1px #707070;
+        border-radius: 50%;
+        &:after {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 4px;
+            left: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #00b5a7;
+        }
+    }
+}
+.check-radio input:checked ~ .checkmark {
+    border: solid 1px #707070;
+}
+.check-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+@media (min-width: 576px) {
+    .gl-recharge {
+        background-color: unset;
+        &__content {
+            background-color: #eee;
+            max-width: 1000px;
+        }
+    }
+}

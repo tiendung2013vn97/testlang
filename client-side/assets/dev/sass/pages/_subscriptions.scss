@@ -1,0 +1,44 @@
+.gl-subscriptions{
+    &__picture{
+        width: 90px;
+        height: 90px;
+    }
+    &__content{
+        .title{
+            h4{
+                font-family: 'OpenSans';
+            }
+        }
+        .link{
+            p{
+                color: #1a4aaa;
+            }
+        }
+        .text{
+            height: 65px;
+        }
+    }
+    &__picture{
+        img{
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .gl-subscriptions{
+        &__picture{
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .gl-subscriptions{
+        &__picture{
+            width: 140px;
+            height: 140px;
+        }
+    }
+}

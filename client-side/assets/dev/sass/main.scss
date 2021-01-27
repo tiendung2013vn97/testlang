@@ -1,0 +1,48 @@
+//base
+@import 'bases/variables';
+@import 'bases/respon-to';
+// @import 'bases/gl-custom-slider';
+@import 'bases/base.scss';
+
+//pages
+@import 'pages/auth';
+@import 'pages/forgotPassword';
+@import 'bases/video';
+@import 'bases/base';
+@import 'bases/button';
+@import 'pages/profileUser';
+@import 'pages/history';
+@import 'pages/subvideo';
+@import 'pages/playlist';
+@import 'pages/homepageUpload';
+@import 'pages/recharge';
+@import 'pages/withdrawal';
+@import 'pages/payHistory';
+@import 'pages/subscriptions';
+@import 'pages/liked';
+@import 'pages/trending';
+
+//custom font
+@import 'customs_font/custome-font.scss';
+@import 'customs_font/font-awesome/fontawesome.scss';
+
+// atomic
+@import 'bases/atomic';
+@import 'bases/atomic-sm';
+@import 'bases/atomic-md';
+@import 'bases/atomic-lg';
+@import 'bases/atomic-xl';
+
+// components
+@import 'components/navbar';
+@import 'components/left-aside';
+@import 'components/pagination';
+@import 'components/range-slider';
+@import 'components/header';
+
+// pages
+@import 'pages/homepage';
+@import 'pages/channel';
+@import 'pages/searchResult';
+@import 'pages/pay.scss';
+@import 'pages/payDetails.scss';

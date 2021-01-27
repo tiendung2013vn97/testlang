@@ -1,0 +1,64 @@
+.gl-trending {
+    .history {
+        border-bottom: 2px solid #343a40;
+    }
+    .gl-filter {
+        position: unset;
+        border: unset;
+        .drop-filter {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        }
+        ul {
+            .active {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.link-video {
+    .img {
+        height: 193px;
+    }
+}
+
+@media (min-width: 425px) {
+    .link-video {
+        .img {
+            height: 262px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .link-video {
+        .img {
+            height: 159px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .link-video {
+        .img {
+            height: 193px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .gl-trending {
+        .gl-filter {
+            .arrow-left {
+                margin-left: -19px;
+                margin-top: 12px;
+                width: 0;
+                height: 0;
+                border-top: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+                border-right: 11px solid #fff;
+            }
+            margin-top: -46px;
+        }
+    }
+}

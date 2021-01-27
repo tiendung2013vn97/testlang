@@ -1,0 +1,106 @@
+.gl-pay-history{
+    .item-history{
+        &:last-child{
+            padding-right: 0px!important;
+        }
+        .tab-click{
+            background-color: #f7f7f7;
+            outline: none;
+            width: 160px;
+            &:hover{
+                background-color: #5da0dc;
+                color: #fff;
+            }
+        }
+        .tab-click.active{
+            background-color: #0981ec;
+            color: #fff;
+        }
+    }
+    &__content{
+        .detail{
+            .title, .descrip{
+                .item-title{
+                    border-left: solid 1px #fff;
+                    border-bottom: solid 1px #fff;
+                    width: 222px;
+                    h2{
+                        font-weight: 500;
+                    }
+                    &:first-child{
+                        border-left:none;
+                    }
+                }
+            }
+            .descrip{
+                background-color: #f7f7f7;
+            }
+        }
+        .calendar-search{
+            .calendar{
+                .mx-datepicker-popup {
+                    overflow-x: scroll;
+                    width: 100%;
+                    top: unset !important;
+                    left: 0px !important;
+                }
+                .mx-datepicker-footer {
+                    width: 496px;
+                }
+                .mx-shortcuts-wrapper {
+                    display: none;
+                }
+                .mx-input-wrapper{
+                    input{
+                        border: 0;
+                        font-size: 16px;
+                        background: #eee;
+                        border-radius: 5px;
+                        padding: 8px 40px 8px 20px;
+                        box-shadow: none;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .gl-pay-history {
+        &__content {
+            .calendar-search {
+                .calendar {
+                    .mx-datepicker-popup {
+                        overflow-x: unset;
+                        width: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    .gl-pay-history{
+        &__content{
+            .detail{
+                .title, .descrip{
+                    .item-title{
+                        width: unset;
+                    }
+                }
+            }
+            .calendar-search{
+                padding: 0 90px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .gl-pay-history{
+        &__content{
+            .calendar-search{
+                padding: 0 180px;
+            }
+        }
+    }
+}
